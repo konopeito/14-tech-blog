@@ -1,6 +1,7 @@
 const { Post } = require('../models');
 
 const postdata = [
+    // Data (posts)
     {
         title: 'Test',
         description: ' lmao idk what to put here',

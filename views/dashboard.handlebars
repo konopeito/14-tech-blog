@@ -1,5 +1,6 @@
 <h2>Create New Post</h2>
 <section class="form-box">
+    {{!-- Making new post --}}
     <form class="new-post-form">
         <div>
             <label for="post-title">Title</label>
@@ -17,6 +18,7 @@
 
 {{#if posts.length}}
 <h2>Your Posts</h2>
+{{!-- User posts --}}
 <section class="form-box">
     <ul>
         {{#each posts as |post|}}

@@ -3,15 +3,17 @@
   }
   
   body, html {
-    font-family: sans-serif;
-    height: 100%;
+    background-color: rgb(155, 168, 189);
+    color: rgb(85, 77, 77);
     padding: 0;
     margin: 0;
-    background-color: rgb(182, 212, 182);
-    color: rgb(85, 77, 77);
+    font-family: sans-serif;
+    height: 100%;
+    
+    
 }
 .nav-link {
-    margin-right: 15px;
+    margin-right: 18px;
   }
 
   nav {
@@ -19,39 +21,40 @@
     padding: 30px 30px 5px 7px;
   }
   
-  .title-container h1 {
-    background-color: rgb(190, 213, 190);
-    color: rgb(41, 23, 23);
-    display: inline-block;
-    padding: 12px;
-    border-radius: 10px;
-    box-shadow: 8px 5px 2px rgba(196, 210, 196, 0.879);
-  }
+ 
 
   #logout {
     all: unset;
   }
 
   a, #logout {
-    text-decoration: none;
-    color: rgb(183, 212, 183);
+    color: rgb(155, 168, 189);
     font-weight: bold;
+    text-decoration: none;
     transition: color .1s;
   }
   
   a:hover {
-    color: rgb(168, 179, 168);
+    color: rgb(126, 151, 193);
   }
   
   
   #submit {
-    border: grey;
-    background-color: grey;
-    color: rgba(222, 213, 213, 0.872);
+    border: rgb(79, 81, 91);
+    color: rgba(143, 139, 165, 0.872);
+    background-color: rgb(100, 122, 101);
     width: 100%;
-    margin: 5px;
+    margin: 7px;
   } 
-
+  .title-container h1 {
+    color: rgb(30, 24, 44);
+    background-color:rgb(155, 168, 189);
+    border-radius: 10px;
+    box-shadow: 8px 5px 2px rgba(135, 150, 173, 0.879);
+    display: inline-block;
+    padding: 12px;
+  }
+  
   #signup-instead {
     color: rgb(235, 225, 225);
   }
@@ -65,18 +68,18 @@
   }
 
   button:not(.logout) {
-    background-color: rgb(190, 213, 190);
-    border: 0;
-    padding: 1%;
-    color: rgb(41, 23, 23);
+    background-color: rgb(155, 168, 189);
+    color: rgb(29, 24, 49);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 7px;
+    border: 0;
+    padding: 1%;
   }
   
   button:hover {
-    background-color: rgb(190, 213, 190);
+    background-color:rgb(155, 168, 189);
   }
   
   .post-list {
@@ -86,30 +89,31 @@
   }
   
   textarea, input {
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 12px;
     width: 100%;
+    border-radius: 7px;
+    border: 1px solid #ccc;
+    
   }
   
   textarea:focus, input:focus {
     outline: none;
-    border: 1px solid #3486eb;
+    border: 3px solid #3486eb;
   }
   
   textarea {
-    min-width: 40%;
+    min-width: 43%;
     min-height: 100px;
   }
   
   .form-box {
     border: solid;
-    padding: 10px;
+    padding: 14px;
   }
 
   h2 {
     background-color: rgb(41, 23, 23);
-    color: rgb(190, 213, 190);
+    color:rgb(155, 168, 189);
     padding: 10px;
     margin: 0;
   }
@@ -122,18 +126,18 @@
     display: block;
   }
   
-  .wrapper {
+  .container {
+    margin: 0 auto;
     width: 100%;
+    display: flex;
     min-height: 100%;
     max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
     flex-direction: column;
   }
   
   header {
     background-color: rgb(41, 23, 23);
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid rgb(155, 168, 189);
     padding: 0 1%;
   }
   
@@ -143,15 +147,15 @@
   
   main {
     flex: 1;
-    padding: 2% 4%;
+    padding: 3% 5%;
   }
 
   .delete-post-btn {
-    background-color: #d41414;
+    background-color: #b82e2e;
   }
   
   .delete-post-btn:hover {
-    background-color: #ff643d;
+    background-color: #df5b3a;
   }
 
   ul {
@@ -160,9 +164,10 @@
   
   .post {
     margin-bottom: 2%;
+    padding: 12px;
     line-height: 150%;
     border: solid;
-    padding: 10px;
+    
   }
   
   .post .title {
@@ -171,29 +176,32 @@
     padding: 10px;
   }
 
+
+  .edit-link {
+    color: rgb(26, 25, 28);
+    display: block;
+    margin: -1.5% 0 2% 0;
+    
+  }
   .post .title span {
-    font-style: italic;
     font-size: 90%;
+    font-style: italic;
     color: #7d7d7d;
   }
   
-  .edit-link {
-    display: block;
-    margin: -1.5% 0 2% 0;
-    color: black;
-  }
+ 
   
   .upvote-btn {
-    background-color: #197d0f;
+    background-color: #0f3d7d;
     transition: background-color .1s;
   }
   
   .upvote-btn:hover {
-    background-color: #1f9c13;
+    background-color: #2775b9;
   }
   
   .comments a {
-    color: black;
+    color: rgb(30, 30, 31);
     font-weight: normal;
   }
   .comment-form {
@@ -201,7 +209,7 @@
   }
 
   #comment-form {
-    border-top: 35px solid black;
+    border-top: 38px solid rgb(30, 30, 31);
   }
   
   .comment {
@@ -219,9 +227,6 @@
     opacity: .6;
   }
   
-  .edit-post-form {
-    margin-bottom: 5%;
-  }
   
   footer {
     border-top: 1px solid #ccc;
@@ -229,4 +234,7 @@
     justify-content: center;
     padding: 1%;
     font-size: 110%;
+  }
+  .edit-post-form {
+    margin-bottom: 5%;
   }

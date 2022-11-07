@@ -1,5 +1,5 @@
 {{> post-info post}}
-
+{{!-- When user logs in they're presented with comments on their feed --}}
 {{#if loggedIn}}
 <article class="post" id="comment-form">
     <form class="comment-form">
@@ -14,7 +14,7 @@
     </form>
 </article>
 {{/if}}
-
+{{!-- If there are previously existing comments they show here --}}
 {{> comments post.comments}}
 
 {{#if loggedIn}}
