@@ -69,7 +69,7 @@
 
   button:not(.logout) {
     background-color: rgb(155, 168, 189);
-    color: rgb(29, 24, 49);
+    color: rgb(24, 21, 79);
     font-weight: bold;
     transition: background-color .1s;
     cursor: pointer;
@@ -112,7 +112,7 @@
   }
 
   h2 {
-    background-color: rgb(41, 23, 23);
+    background-color: rgb(35, 27, 95);
     color:rgb(155, 168, 189);
     padding: 10px;
     margin: 0;
@@ -136,7 +136,7 @@
   }
   
   header {
-    background-color: rgb(41, 23, 23);
+    background-color: rgb(35, 27, 95);
     border-bottom: 1px solid rgb(155, 168, 189);
     padding: 0 1%;
   }
@@ -171,8 +171,8 @@
   }
   
   .post .title {
-    background-color: rgb(41, 23, 23);
-    color: grey;
+    background-color: rgb(35, 27, 95);
+    color: rgb(107, 110, 118);
     padding: 10px;
   }
 
@@ -209,7 +209,7 @@
   }
 
   #comment-form {
-    border-top: 38px solid rgb(30, 30, 31);
+    border-top: 38px solid rgb(35, 27, 95);
   }
   
   .comment {
